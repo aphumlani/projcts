@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="Home"
+        android:id="@+id/bottom_home_menu"
+        android:icon="@drawable/home_vector"/>
+
+    <item android:title="Notification"
+        android:id="@+id/bottom_notification_menu"
+        android:icon="@drawable/notification_vector"/>
+
+    <item
+        android:id="@+id/bottom_user_menu"
+        android:icon="@drawable/user_vector"
+        android:title="User Account" />
+</menu>

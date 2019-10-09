@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background1"
+    tools:context=".Activities.NewPostActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_new_post"
+        android:layout_width="match_parent"
+        app:titleTextColor="@color/colorWhite"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGray">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/add_new_post_image"
+        android:layout_width="341dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/add_post_image"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/add_btn" />
+
+    <EditText
+        android:id="@+id/new_post_title_id"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/input2"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textMultiLine|textPersonName"
+        android:maxLength="125"
+        android:paddingLeft="10dp" />
+
+    <Button
+        android:id="@+id/post_button_setup_id"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/mybutton"
+        android:text="Post"
+        android:textColor="@color/colorWhite"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"/>
+
+</LinearLayout>

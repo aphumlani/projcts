@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".Activities.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/logo_login"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/email_register_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_gravity="center"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="50dp"
+        android:hint="Email"
+        android:textColorHint="#FFF"
+        android:textColor="#FFF"
+        android:textAlignment="center"
+        android:background="@drawable/input_field"/>
+
+    <EditText
+        android:id="@+id/password_register_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:inputType="numberPassword"
+        android:textColorHint="#FFF"
+        android:textColor="#FFF"
+        android:hint="Password"
+        android:textAlignment="center"
+        android:background="@drawable/input_field"/>
+
+    <EditText
+        android:id="@+id/confirm_password_register_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:inputType="numberPassword"
+        android:textColorHint="#FFF"
+        android:textColor="#FFF"
+        android:hint="Confirm Password"
+        android:textAlignment="center"
+        android:background="@drawable/input_field"/>
+
+    <Button
+        android:id="@+id/register_button_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/mybutton"
+        android:text="Register"
+        android:textColor="@color/colorWhite" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Already have an account?"
+            android:textColor="@color/colorWhite"/>
+
+        <TextView
+            android:id="@+id/login_register_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Login"
+            android:textColor="@color/text_color"/>
+    </LinearLayout>
+
+
+</LinearLayout>
